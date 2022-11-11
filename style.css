@@ -217,9 +217,20 @@ header {
 }
 
 .hero-banner__play-button {
+  display: block;
   position: relative;
-  z-index: 1000;
 }
+
+.hero-banner__play-button::before{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgba(236, 232, 225, .5);
+  content: "";
+  display: block;
+  height: 100%;
+}
+
 
 .play-for-free {
   background: #0bC4E2;
@@ -232,7 +243,8 @@ header {
   font-weight: 800;
   font-size: 11px;
   letter-spacing: 2px;
-  border: 3px double white;
+  padding: 12px 17px 11px 17px;
+  margin: 7px;
 }
 
 .play-for-free:hover {
